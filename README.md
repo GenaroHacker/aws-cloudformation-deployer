@@ -29,7 +29,7 @@
 - **Select the CLI option** and acknowledge the recommendations.
 - Click **"Create access key"** again and securely **store the provided keys**.
 
-## Step 3: Install AWS CLI v2 and SDK for Python on Ubuntu
+## Step 3: Install AWS CLI v2 and SDK for Python (Ubuntu)
 
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
