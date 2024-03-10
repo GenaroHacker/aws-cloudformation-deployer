@@ -47,7 +47,8 @@ pip install -r requirements.txt
 ```bash
 aws configure
 ```
-- Provide your Access key ID, Secret access key, and default AWS region.
+- Provide your Access key ID, Secret access key, and default AWS region like `us-east-1`.
+- For default output format hit enter to use the default json format.
 
 ## Step 5: Deploy the CloudFormation Stack
 
