@@ -10,6 +10,7 @@
 4. [**Configure the AWS CLI**](#step-4-configure-the-aws-cli)
 5. [**Deploy the CloudFormation Stack**](#step-5-deploy-the-cloudformation-stack)
 6. [**Verify the CloudFormation Stack Deployment**](#step-6-verifying-deployment)
+7. [**The `Stack` Class Overview**](#the-stack-class-overview)
 
 
 ## Step 1: Create an IAM User with Necessary Permissions
@@ -65,8 +66,6 @@ Once the CloudFormation stack deployment process is completed, you should verify
 1. Navigate to the AWS Management Console.
 2. Go to the **S3** service page to check the newly created S3 buckets.
 3. Visit the **CloudFormation** service page to confirm the stack's status and the resources it has deployed.
-
-This verification step ensures that your deployment matches your expectations and is functioning as intended within your AWS environment.
 
 ---
 
