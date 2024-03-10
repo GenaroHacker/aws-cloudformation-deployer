@@ -114,7 +114,7 @@ if __name__ == '__main__':
     # Example usage (uncomment to use)
     # Create stack
     response = stack.create(template_body_json)
-    #print(response)
+    print(response)
 
     # Check stack status
     status, message = stack.describe()
@@ -122,8 +122,8 @@ if __name__ == '__main__':
 
     # Update stack (Assuming the template_body or template_body_json has been modified appropriately)
     response = stack.update(template_body_json)
-    #print(response)
+    print(response)
 
     # Delete stack
-    response = stack.delete()
+    #response = stack.delete()
     #print(response)
