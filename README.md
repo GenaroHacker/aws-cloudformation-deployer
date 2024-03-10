@@ -9,6 +9,8 @@
 3. [**Install AWS CLI v2 and SDK for Python on Ubuntu**](#step-3-install-aws-cli-v2-and-sdk-for-python-on-ubuntu)
 4. [**Configure the AWS CLI**](#step-4-configure-the-aws-cli)
 5. [**Deploy the CloudFormation Stack**](#step-5-deploy-the-cloudformation-stack)
+6. [**Verify the CloudFormation Stack Deployment**](#step-6-verifying-deployment)
+
 
 ## Step 1: Create an IAM User with Necessary Permissions
 
@@ -55,4 +57,32 @@ aws configure
 - **Download** and **open** the **`main.py` file** in your code editor.
 - **Execute the file** to deploy the CloudFormation stack.
 
+
+## Step 6: Verifying Deployment
+
+Once the CloudFormation stack deployment process is completed, you should verify that the resources have been successfully deployed:
+
+1. Navigate to the AWS Management Console.
+2. Go to the **S3** service page to check the newly created S3 buckets.
+3. Visit the **CloudFormation** service page to confirm the stack's status and the resources it has deployed.
+
+This verification step ensures that your deployment matches your expectations and is functioning as intended within your AWS environment.
+
+---
+
+## The `Stack` Class Overview
+
+The `Stack` class is designed to encapsulate operations related to AWS CloudFormation stacks. **Creating**, **updating**, **describing**, and **deleting** CloudFormation stacks. Below are the class's properties and methods:
+
+### Properties
+
+- `cf_client`: This is the AWS CloudFormation client object, instantiated using Boto3, which provides an interface to the CloudFormation service.
+- `stack_name`: A string representing the name of the CloudFormation stack. This name is used when creating, updating, or deleting the stack.
+
+### Methods
+
+- `create()`: Initiates the creation of a CloudFormation stack based on predefined templates and parameters.
+- `describe()`: Retrieves information about the current status of the stack.
+- `update()`: Applies changes to the existing stack.
+- `delete()`: Removes the stack and all associated resources from AWS CloudFormation.
 
