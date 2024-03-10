@@ -1,6 +1,6 @@
 # aws-cloudformation-deployer 
 
-A brief description of what this project does and who it's for.
+Create an AWS IAM user with S3 and CloudFormation full access, generate access keys, and set up AWS CLI v2 and boto3 on Ubuntu. Deploy a CloudFormation stack using a Python script.
 
 ## Table of Contents
 
