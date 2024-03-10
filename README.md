@@ -6,7 +6,7 @@
 
 1. [**Create an IAM User with Necessary Permissions**](#step-1-create-an-iam-user-with-necessary-permissions)
 2. [**Generate Access Keys**](#step-2-generate-access-keys)
-3. [**Install AWS CLI v2 and SDK for Python on Ubuntu**](#step-3-install-aws-cli-v2-and-sdk-for-python-on-ubuntu)
+3. [**Install AWS CLI v2 and SDK for Python on Ubuntu**](#step-3-install-aws-cli-v2-and-sdk-for-python-ubuntu)
 4. [**Configure the AWS CLI**](#step-4-configure-the-aws-cli)
 5. [**Deploy the CloudFormation Stack**](#step-5-deploy-the-cloudformation-stack)
 6. [**Verify the CloudFormation Stack Deployment**](#step-6-verifying-deployment)
