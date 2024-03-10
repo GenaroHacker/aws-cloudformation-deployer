@@ -13,7 +13,7 @@
 ## Step 1: Create an IAM User with Necessary Permissions
 
 - **Navigate** to the **AWS Management Console**.
-- **Type "IAM"** in the search bar and select it.
+- **Type "IAM"** in the search bar and **select it**.
 - Go to "Users" and click on **"Create user"**.
 - Name the user **"my_new_user"** and continue.
 - Select **"Attach policies directly"** and add `AmazonS3FullAccess` and `AWSCloudFormationFullAccess`.
