@@ -2,7 +2,7 @@ import subprocess
 import boto3
 import json
 import botocore.exceptions
-
+from template import template_body
 
 class Stack:
     def __init__(self, cf_client, stack_name):
@@ -105,15 +105,7 @@ if __name__ == '__main__':
     stack_name = 'my-neiw-stack'
     stack = Stack(cf_client, stack_name)
 
-    # Prepare the template
-    template_body = {
-        "AWSTemplateFormatVersion": "2010-09-09",
-        "Resources": {
-            "MyS3Bucket": {
-                "Type": "AWS::S3::Bucket"
-            }
-        }
-    }
+    # Convert the template_body dictionary to a JSON-formatted string
     template_body_json = json.dumps(template_body)
 
     # Example usage (uncomment to use)
