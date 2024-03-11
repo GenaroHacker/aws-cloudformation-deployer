@@ -63,6 +63,7 @@ Instead of using `aws configure`, we'll automate the process. Follow these steps
    ```bash
    chmod +x aws-auth.sh
    ```
+⚠️ **Important:** Ensure `aws-auth.sh` is listed in `.gitignore` to keep your credentials private.
 
 ## Step 5: Deploy the CloudFormation Stack
 
