@@ -1,0 +1,8 @@
+# AWS CLI configuration and credentials
+.aws/
+
+# Custom scripts that set AWS credentials
+aws-auth.sh
+
+# Environment files that might contain secrets
+.env

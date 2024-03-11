@@ -1,3 +1,4 @@
+import subprocess
 import boto3
 import json
 import botocore.exceptions
@@ -11,6 +12,10 @@ class Stack:
         :param cf_client: The CloudFormation client.
         :param stack_name: Name of the stack managed by this instance.
         """
+
+        # Run the AWS authentication script
+        subprocess.run(["./aws-auth.sh"], check=True)
+
         self.cf_client = cf_client
         self.stack_name = stack_name
 
@@ -97,7 +102,7 @@ class Stack:
 
 if __name__ == '__main__':
     cf_client = boto3.client('cloudformation')
-    stack_name = 'my-new-stack'
+    stack_name = 'my-neiw-stack'
     stack = Stack(cf_client, stack_name)
 
     # Prepare the template
