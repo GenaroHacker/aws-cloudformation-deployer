@@ -67,7 +67,8 @@ Instead of using `aws configure`, we'll automate the process. Follow these steps
 
 ## Step 5: Deploy the CloudFormation Stack
 
-- **Download** and **open** the **`main.py` file** in your code editor.
+- **Download** the repository files.
+- **Open** the **`main.py` file** in your code editor.
 - **Execute the file** to deploy the CloudFormation stack.
 
 
