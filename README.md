@@ -47,11 +47,22 @@ pip install -r requirements.txt
 
 ## Step 4: Configure the AWS CLI
 
-```bash
-aws configure
-```
-- Provide your Access key ID, Secret access key, and default AWS region like `us-east-1`.
-- For default output format hit enter to use the default json format.
+Instead of using `aws configure`, we'll automate the process. Follow these steps:
+
+1. **Create `aws-auth.sh`** with your AWS credentials and configuration commands. Replace placeholders with your actual details:
+
+   ```bash
+   #!/bin/bash
+   aws --profile default configure set aws_access_key_id "your-access-key-id"
+   aws --profile default configure set aws_secret_access_key "your-secret-access-key"
+   aws --profile default configure set region "your-default-region"
+   aws --profile default configure set output "json"
+   ```
+2. Make it Executable:
+
+   ```bash
+   chmod +x aws-auth.sh
+   ```
 
 ## Step 5: Deploy the CloudFormation Stack
 
